@@ -7,11 +7,11 @@ import {
     DrawerContent,
     DrawerOverlay,
     DrawerHeader,
-    DrawerFooter,
     useDisclosure,
     IconButton,
     Divider,
-    VStack
+    VStack,
+    Heading
 } from '@chakra-ui/react';import React from 'react'
 import { Btn } from './Btn';
 
@@ -37,7 +37,7 @@ const DrawerMenu = () => {
                     <DrawerContent>
                         
                         <DrawerHeader>
-                            <h2 >NICOLAS MONTERO</h2>
+                            <Heading variant='headline2'>NICOLAS MONTERO</Heading>
                             <DrawerCloseButton mt={2} w={6} h={6} variant='drawerBtn' />
                         </DrawerHeader>
 

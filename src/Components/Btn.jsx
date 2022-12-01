@@ -7,7 +7,7 @@ export const Btn = ({text,cv,mb,mt}) => {
         <>
             {
                 isCv
-                ? <Button mb={mb}  mt={mt} as="a" variant='outline' href={cvUrl} download>Descargar CV</Button>
+                ? <Button mb={mb}  mt={mt} as="a" variant='outline' href={cvUrl} download>DESCARGAR CV</Button>
                 :<Button variant='outline'>{text}</Button>
             }
         </>

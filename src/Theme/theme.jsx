@@ -1,6 +1,22 @@
 import { extendTheme } from "@chakra-ui/react";
 
 const theme = extendTheme({
+    styles:{
+        global:{
+            html:{
+                fontSize:"17px"
+            },
+            body:{
+                bg:'brand.whiteColor'
+            },
+            m:'0'
+        },
+    },
+    fonts:{
+        heading: `Urbanist,'Segoe UI', Tahoma, Geneva, Verdana, sans-serif`,
+        body: `Urbanist,'Segoe UI', Tahoma, Geneva, Verdana, sans-serif`,
+    },
+    
     colors:{
         brand:{
             whiteColor:'#f5f5f5',
@@ -10,14 +26,74 @@ const theme = extendTheme({
         }
     },
     components:{
-        Box:{
+        Stack:{
+            baseStyle:{
+                bg:'#ffffff'
+            }
+        },
+        VStack:{
+            baseStyle:{
+                bg:'#ffffff'
+            }
+        },
+
+        Text:{
+            baseStyle:{
+                fontSize:'1rem',
+                fontWeight:'normal',
+                letterSpacing:'0.029',
+            },
             variants:{
-                'drawerHeader':{
-                    bg:'brand.primaryColor'
+                'body2':{
+                    fontSize:'0.882rem',
+                    letterSpacing:'0.015rem'
+                },
+                'sub2':{
+                    fontWeight:'500',
+                    fontSize:'0.824rem',
+                    letterSpacing:'0.006rem',
+                    color:'brand.primaryColor'
+                },
+                'cap':{
+                    fontSize:'0.725rem',
+                    letterSpacing:'0.024rem'
+                },
+                'sub1':{
+                    fontWeight:'normal',
+                    fontSize:'1rem',
+                    letterSpacing:'0.009rem'
+                }
+            },
+        },
+        Heading:{
+            baseStyle:{
+                color:'brand.blackColor'
+            },
+            variants:{
+                'headline1':{
+                    fontWeight:'normal',
+                    fontSize:'2rem',
+                    letterSpacing:'0.015rem',
+                    color:'brand.accentColor'
+                },
+                'headline2':{
+                    fontWeight:'normal',
+                    fontSize:'1.471rem',
+                    letterSpacing:'0',
+                    color:'brand.accentColor'
+                },
+                'headline3':{
+                    fontWeight:'500',
+                    fontSize:'1.176rem',
+                    letterSpacing:'0.009rem'
+                },
+                'subtitle1':{
+                    fontWeight:'normal',
+                    fontSize:'1rem',
+                    letterSpacing:'0.009rem'
                 }
             }
-        }
-        ,
+        },
         CloseButton:{
             variants:{
                 'drawerBtn':{
@@ -30,6 +106,13 @@ const theme = extendTheme({
                     _active:{
                         color:'brand.primaryColor'
                     }
+                }
+            }
+        },
+        Drawer:{
+            baseStyle:{
+                dialog:{
+                    bg:'brand.whiteColor'
                 }
             }
         },
