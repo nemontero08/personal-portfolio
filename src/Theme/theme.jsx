@@ -125,7 +125,7 @@ const theme = extendTheme({
                     }
                 },
                 'navItem':{
-                    color: 'brand.blackColor',
+                    color:'brand.blackColor',
                     letterSpacing:'0.029rem',
                     fontWeight:'normal',
                     fontSize:'1rem',
@@ -147,12 +147,13 @@ const theme = extendTheme({
                     }
                 },
                 outline:{
-                    color: 'brand.blackColor',
+                    color:'brand.blackColor',
                     letterSpacing:'0.074rem',
                     fontWeight:'500',
                     borderColor:'brand.blackColor',
                     borderRadius:'0.235rem',
                     backgroundColor:'brand.whiteColor',
+                    fontSize:'0.882rem',
                     _after:{
                         content:'""',
                         display:'block',
