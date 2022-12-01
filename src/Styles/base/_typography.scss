@@ -22,10 +22,11 @@ h2{
     font-size: 1.471rem;
     letter-spacing:0;
     color: $accent;
-    .logo{
+    &.logo{
         color: white;
     }
 }
+
 h3{
     font-weight:500;
     font-size: 1.176rem;

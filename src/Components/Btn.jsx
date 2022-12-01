@@ -1,13 +1,13 @@
 import {Button} from '@chakra-ui/react';
 
-export const Btn = ({text,cv}) => {
+export const Btn = ({text,cv,mb,mt}) => {
     const isCv = cv;
     const cvUrl = '../../public/CV_Nicolas_Montero_2022_(ES).pdf';
     return (
         <>
             {
                 isCv
-                ? <Button as="a" variant='outline' href={cvUrl} download>Descargar CV</Button>
+                ? <Button mb={mb}  mt={mt} as="a" variant='outline' href={cvUrl} download>Descargar CV</Button>
                 :<Button variant='outline'>{text}</Button>
             }
         </>

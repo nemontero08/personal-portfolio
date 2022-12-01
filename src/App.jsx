@@ -1,11 +1,10 @@
-import { Btn } from "./Components/Btn"
+import DrawerMenu from "./Components/DrawerMenu";
 
 function App() {
 
   return (
     <>
-      <p>Hello World!</p>
-      <Btn cv={true}></Btn>
+      <DrawerMenu/>
     </>
   )
 }
